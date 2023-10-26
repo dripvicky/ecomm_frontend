@@ -1,0 +1,21 @@
+.productCart{
+    width: 24%;
+    height: 500px;
+    margin-top: 10px;
+    float: left;
+    margin-left: 10px;
+    background-color: white;
+    border: 0;
+}
+.productCart img{
+    height: 300px;
+    width: 100%;
+    object-fit: contain;
+    padding: 5px;
+}
+.productCart p{
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+    font-size: 16px;
+}

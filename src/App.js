@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
+import Paths from './elements/path/paths';
 
 function App() {
+  const [cart,setcart] = useState([])
+
+  const handleCart = (item) =>{
+    let present = false
+    cart.forEach(element=>{
+      if(element.id === item.id)
+        present = true
+    })
+    if(present){
+      alert('already added')
+      return
+    }
+    setcart([...cart,{...item,qty:1}])
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Paths handleCart={handleCart} setcart={setcart} cart={cart} />
     </div>
   );
 }

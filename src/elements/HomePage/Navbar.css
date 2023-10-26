@@ -1,0 +1,100 @@
+body{
+    background-color: black !important;
+}
+.navbar1{
+    background-color: black;
+    height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 12px;
+}
+.bord{
+    border: 1px solid transparent;
+}
+.bord:hover{
+    border: 1px solid white;
+}
+.logo{
+    height: 70px;
+    width: 150px;
+}
+.logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.box1{
+    height: 70px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box1 span{
+    height: 100%;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.box1 input{
+    height: 100%;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.box2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 180px;
+}
+.box3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 120px;
+}
+.box2 span{
+    margin-left: 5px;
+}
+.box3 span{
+    margin-left: 5px;
+}
+.box4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 120px;
+}
+.hover{
+    background-color: white;
+    padding: 10px;
+    height: 150px;
+    width: 200px;
+    position: absolute;
+    top: 80px;
+    right: 15px;
+    display: none;
+}
+.box4:hover .hover{
+    display: block;
+    border-radius: 2px;
+    border: 0;
+}
+.span{
+    color:blue;
+}
+.span:hover{
+    cursor: pointer;
+}
